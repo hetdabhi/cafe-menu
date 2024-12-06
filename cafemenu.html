@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe</title>
+  <style>
+    body {
+    background-image: url('Coffee.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgba(0,0,0,0.5); /* Optional: adds a dark overlay */
+    background-blend-mode: darken;
+    }
+
+    .menu {
+      background-color: rgba(245, 222, 179, 0.9); /* Slight transparency for better readability */
+      width: 60%;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin: 5px 0 20px;
+      font-style: italic;
+      color: #444;
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid maroon;
+      width: 80%;
+      margin: 20px auto;
+    }
+
+    .menu-section {
+      margin-bottom: 30px;
+    }
+
+    .menu-section h2 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+      color: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .menu-section h2 img {
+      margin-right: 10px;
+      width: 25px;
+    }
+
+    .menu-items {
+      list-style: none;
+      padding: 0;
+    }
+
+    .menu-items li {
+      font-size: 1.2em;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 20px;
+    }
+
+    .footer {
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+
+    .footer a {
+      color: maroon;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    #welcome-message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      color: #000;
+    }
+
+    #welcome-message a {
+      color: maroon;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function showWelcomeMessage() {
+      const welcomeMessage = document.getElementById("welcome-message");
+      welcomeMessage.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <div class="menu">
+    <h1>Drip Drop Brew</h1>
+    <p class="subtitle">Est. 2020</p>
+    <hr>
+    <div class="menu-section">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/1047/1047469.png" alt="Coffee Icon"> Coffee</h2>
+      <ul class="menu-items">
+        <li><span>French Vanilla</span> <span>$3.00</span></li>
+        <li><span>Caramel Macchiato</span> <span>$3.75</span></li>
+        <li><span>Pumpkin Spice</span> <span>$3.50</span></li>
+        <li><span>Hazelnut</span> <span>$4.00</span></li>
+        <li><span>Mocha</span> <span>$4.50</span></li>
+      </ul>
+    </div>
+    <div class="menu-section">
+      <h2><img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Dessert Icon"> Desserts</h2>
+      <ul class="menu-items">
+        <li><span>Donut</span> <span>$1.50</span></li>
+        <li><span>Cherry Pie</span> <span>$2.75</span></li>
+        <li><span>Cheesecake</span> <span>$3.00</span></li>
+        <li><span>Cinnamon Roll</span> <span>$2.50</span></li>
+      </ul>
+    </div>
+    <hr>
+    <div class="footer">
+      <a href="https://hetdabhi.github.io/portfolio/">Visit our website</a>
+      <p>HET DABHI</p>
+    </div>
+    <div id="welcome-message">
+      Welcome to our website! Visit us at <a href="https://hetdabhi.github.io/portfolio/" target="_blank">Cafe Coffee</a>.
+    </div>
+  </div>
+</body>
+</html>
